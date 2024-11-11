@@ -1,0 +1,79 @@
+1. database/sql
+Objetivo: Guardar los scripts SQL necesarios para la creación y mantenimiento de la base de datos.
+Archivos y scripts comunes:
+crear_tablas.sql: Script SQL para crear todas las tablas principales, como Documentos, Clasificacion, Permisos, etc.
+inserts_iniciales.sql: Datos de prueba iniciales o valores predeterminados, como tipos de documentos, roles, y permisos.
+triggers.sql: Scripts para definir triggers que se ejecutan automáticamente con ciertas acciones (ejemplo: auditoría de cambios en documentos).
+funciones.sql: Funciones almacenadas para cálculos recurrentes o validaciones.
+views.sql: Definición de views para consultas específicas y optimización de reportes.
+2. database/backups
+Objetivo: Almacenar copias de seguridad de la base de datos.
+Archivos y scripts comunes:
+Archivos .sql de respaldo, generados con fechas (backup_2024_11_04.sql) para conservar versiones de seguridad.
+Script de respaldo automático, por ejemplo, backup_database.sh, que puede ejecutarse en cron para respaldos regulares.
+3. scripts/bash
+Objetivo: Scripts Bash para automatizar tareas administrativas y operativas.
+Archivos y scripts comunes:
+crear_estructura.sh: El script principal para crear la estructura del proyecto.
+backup_script.sh: Script para crear copias de seguridad de la base de datos y moverlas a la carpeta database/backups.
+limpieza_temp.sh: Script para eliminar archivos temporales en la carpeta temp y liberar espacio.
+restaurar_backup.sh: Script para restaurar una copia de seguridad específica en la base de datos.
+4. documentacion
+Objetivo: Almacenar la documentación relacionada con el proyecto.
+Archivos y documentos comunes:
+manual_usuario.pdf: Guía de usuario final para el sistema de gestión documental.
+manual_tecnico.pdf: Documentación técnica del proyecto, incluyendo estructura de la base de datos y explicación de la API.
+requisitos.md: Lista de requisitos funcionales y técnicos del proyecto.
+diagrama_ER.png: Diagrama de la base de datos en formato gráfico.
+diagrama_clases.png: Diagrama de clases si el sistema sigue un enfoque orientado a objetos.
+5. seguridad
+Objetivo: Scripts y archivos de configuración para la seguridad de la aplicación.
+Archivos y scripts comunes:
+config_firewall.sh: Script para configurar reglas de firewall.
+verificacion_integridad.sh: Script para verificar la integridad de los documentos almacenados usando hashes.
+seguridad_conf.env: Archivo de variables de entorno para almacenar claves de cifrado y configuraciones de seguridad.
+roles_permisos.sql: Script SQL para definir los roles y permisos de acceso a diferentes documentos y funcionalidades.
+6. config
+Objetivo: Archivos de configuración del proyecto.
+Archivos y archivos comunes:
+config_db.env: Configuración de conexión a la base de datos (host, usuario, contraseña, etc.).
+config_app.env: Configuración general de la aplicación, como puertos de servidor, rutas de archivos, etc.
+config_email.env: Configuración de correo electrónico, para notificaciones y alertas.
+7. app/models
+Objetivo: Definir los modelos que representan la lógica de datos de la aplicación.
+Archivos y scripts comunes:
+Documento.php: Modelo que representa un documento y sus propiedades.
+Usuario.php: Modelo para gestionar la información del usuario.
+Clasificacion.php: Modelo para manejar la clasificación documental.
+Permiso.php: Modelo que controla los permisos de acceso y acciones sobre los documentos.
+8. app/controllers
+Objetivo: Controladores que gestionan la lógica de la aplicación y responden a las solicitudes del usuario.
+Archivos y scripts comunes:
+DocumentosController.php: Controlador que maneja todas las operaciones de documentos (crear, ver, editar, eliminar).
+UsuariosController.php: Controlador para el manejo de usuarios y roles.
+SeguridadController.php: Controlador que gestiona las políticas de seguridad, autenticación y acceso.
+AuditoriaController.php: Controlador que registra y revisa los cambios en documentos y registros.
+9. app/views
+Objetivo: Archivos de las vistas que presentan la información al usuario final.
+Archivos y scripts comunes:
+documentos_list.php: Vista para mostrar la lista de documentos disponibles.
+documento_detalle.php: Vista que muestra los detalles de un documento.
+login.php: Página de inicio de sesión.
+registrar_usuario.php: Página de registro de usuario.
+acceso_denegado.php: Página que muestra un mensaje de acceso denegado.
+10. storage/documentos
+Objetivo: Almacenamiento de los documentos gestionados en el sistema.
+Archivos comunes:
+Archivos PDF, imágenes, y otros documentos gestionados. Por ejemplo, documento_12345.pdf.
+Carpetas organizadas por año/mes o por categorías documentales (si es necesario).
+11. temp
+Objetivo: Archivos temporales de la aplicación.
+Archivos comunes:
+Archivos temporales generados en operaciones intermedias.
+Archivos temporales de carga de documentos o procesamiento de datos, que se eliminan después de usarse.
+12. logs
+Objetivo: Almacenar registros o logs de las operaciones de la aplicación.
+Archivos comunes:
+app.log: Archivo de log general de la aplicación.
+error.log: Archivo de log para errores específicos de la aplicación.
+seguridad.log: Registro de accesos y eventos relacionados con la seguridad.
