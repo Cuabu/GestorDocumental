@@ -1,7 +1,7 @@
 <?php
 
-include 'templates/header.php';
-include 'db.php';
+include '../config/db.php';
+include '../config/db.php';
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

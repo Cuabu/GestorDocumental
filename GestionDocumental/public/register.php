@@ -1,7 +1,6 @@
 <?php
-include 'templates/header.php';
-
-include 'db.php';
+include '../config/db.php';
+include '../config/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];

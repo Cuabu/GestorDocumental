@@ -1,11 +1,8 @@
 <?php
-include 'templates/header.php';
+include '../templates/header.php';
 
-session_start();
-
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit;
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
 }
 ?>
 
@@ -15,6 +12,8 @@ if (!isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Bienvenido</title>
+    <link rel="stylesheet" href="../public/assets/style.css">
+
 </head>
 
 <body>
