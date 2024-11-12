@@ -17,7 +17,7 @@ if (session_status() === PHP_SESSION_NONE) {
 </head>
 
 <body>
-    <h2>Bienvenido a la Gestión Documental para Colegios</h2>
+    <h2>Bienvenido a la Gestión Documental</h2>
     <p>Has iniciado sesión correctamente.</p>
     <a href="logout.php">Cerrar sesión</a>
 </body>

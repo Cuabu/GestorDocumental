@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión Documental para Colegios</title>
+    <title>Gestión Documental</title>
     <!-- Enlace a Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
     <!-- Enlace al archivo CSS personalizado -->
@@ -48,12 +48,12 @@ session_start();
 
 <main class="container mt-5">
     <!-- Contenido principal de la página -->
-    <h1>Bienvenido a la Gestión Documental para Colegios</h1>
+    <h1>Bienvenido a la Gestión Documental</h1>
     <p>Este sistema facilita la administración y organización de documentos para instituciones educativas.</p>
 </main>
 
 <footer class="bg-dark text-white text-center py-3">
-    <p>© 2024 Gestión Documental para Colegios</p>
+    <p>© 2024 Gestión Documental</p>
 </footer>
 
 <!-- Scripts de Bootstrap -->
