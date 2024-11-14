@@ -1,0 +1,31 @@
+1:45:54 p. m.  [main] 	Initializing Control Panel
+1:45:54 p. m.  [main] 	Windows Version:  Home  64-bit
+1:45:54 p. m.  [main] 	XAMPP Version: 7.2.22
+1:45:54 p. m.  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+1:45:54 p. m.  [main] 	You are not running with administrator rights! This will work for
+1:45:54 p. m.  [main] 	most application stuff but whenever you do something with services
+1:45:54 p. m.  [main] 	there will be a security dialogue or things will break! So think 
+1:45:54 p. m.  [main] 	about running this application with administrator rights!
+1:45:54 p. m.  [main] 	XAMPP Installation Directory: "c:\xampp\htdocs\gestordocumental\gestiondocumental\requeriments\xampp\xampp\"
+1:45:54 p. m.  [main] 	Checking for prerequisites
+1:45:57 p. m.  [main] 	All prerequisites found
+1:45:57 p. m.  [main] 	Initializing Modules
+1:45:57 p. m.  [main] 	The FileZilla module is disabled
+1:45:57 p. m.  [main] 	The Mercury module is disabled
+1:45:57 p. m.  [main] 	Starting Check-Timer
+1:45:57 p. m.  [main] 	Control Panel Ready
+1:47:46 p. m.  [Apache] 	Status change detected: running
+1:47:48 p. m.  [mysql] 	Status change detected: running
+1:47:49 p. m.  [Apache] 	Status change detected: stopped
+1:47:49 p. m.  [Apache] 	Error: Apache shutdown unexpectedly.
+1:47:49 p. m.  [Apache] 	This may be due to a blocked port, missing dependencies, 
+1:47:49 p. m.  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+1:47:49 p. m.  [Apache] 	Press the Logs button to view error logs and check
+1:47:49 p. m.  [Apache] 	the Windows Event Viewer for more clues
+1:47:49 p. m.  [Apache] 	If you need more help, copy and post this
+1:47:49 p. m.  [Apache] 	entire log window on the forums
+1:48:22 p. m.  [mysql] 	Attempting to stop MySQL app...
+1:48:23 p. m.  [mysql] 	Status change detected: stopped
+1:48:28 p. m.  [main] 	Deinitializing Modules
+1:48:28 p. m.  [main] 	Deinitializing Control Panel
+
