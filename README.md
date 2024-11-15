@@ -21,5 +21,3 @@ graph TD
     L --> J
 
     A2 --> M["Sin conexión: Fin de Instalación Offline"]
-
-## Diagrama de Flujo Ejecucion
