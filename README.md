@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD
-    A[Instalador De Docs] -->|Descargar herramientas| B[Requeriments]
+    A[Instalacion De Docs] B[Requeriments]
     B --> C{Requisitos Completados}
     C -->|Sí| D["Quiere Instalar Gestion Docs"]
     C -->|No| E["Actualizar Aplicacion"]
