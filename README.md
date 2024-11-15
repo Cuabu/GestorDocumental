@@ -2,8 +2,11 @@
 
 ```mermaid
 graph TD
-    A[Instalador De Docs] --> B[Requerimientos]
-    B -->|Sí| D["Instalar Gestión Docs"]
+    A[Instalador De Docs] --> A1[Instalación Online]
+    A --> A2[Instalación Offline]
+
+    A1 --> B[Requerimientos]
+    B -->|Sí| D["Quiere Instalar Gestión Docs"]
     D --> I[Completado]
     I --> J[Fin de Instalación]
     
@@ -16,3 +19,7 @@ graph TD
     B -->|Salir| H["Cancelar Instalaciones"]
     H --> L["Instalación Cancelada"]
     L --> J
+
+    A2 --> M["Sin conexión: Fin de Instalación Offline"]
+
+## Diagrama de Flujo Ejecucion
