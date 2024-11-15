@@ -1,9 +1,8 @@
 ## Diagrama de Flujo
 
 ```mermaid
-graph TD
-    A[Instalador De Docs] --> B[Requeriments]
-    B --> C{Requisitos Completos}
-    C -->|Sí| D["Instalar Gestion Docs"]
-    C -->|No| E["Actualizar Aplicacion"]
-    C -->|Salir| F["Cancelar Instalaciones"]
+graficar TD
+    A[Instalador De Docs] B(Requeriments)
+    B -->|Yes| D["Quiere Instalar Gestion Docs"]
+    B -->|No| E["Actualizar Aplicacion"]
+    B -->|Salir| F["Cancelar Instalaciones"]
