@@ -1,6 +1,16 @@
 ```mermaid
-graficar TD
-    A[Instalador De Docs] B(Requeriments)
-    B -->|Yes| D["Quiere Instalar Gestion Docs"]
-    B -->|No| E["Actualizar Aplicacion"]
-    B -->|Salir| F["Cancelar Instalaciones"]
+graph TD
+    A[Instalador De Docs] --> B[Requerimientos]
+    B -->|Sí| D["Instalar Gestión Docs"]
+    D --> I[Completado]
+    I --> J[Fin de Instalación]
+    
+    B -->|No| E["Actualizar Aplicación"]
+    E --> F[Conexión a Internet]
+    F --> G[Actualizar]
+    G --> K[Actualización Completa]
+    K --> J
+    
+    B -->|Salir| H["Cancelar Instalaciones"]
+    H --> L["Instalación Cancelada"]
+    L --> J
