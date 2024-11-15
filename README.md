@@ -20,4 +20,4 @@ graph TD
     H --> L["Instalación Cancelada"]
     L --> J
 
-    A2 --> M["Sin conexión: Fin de Instalación Offline"]
+    A2 --> M["Requerimientos"]
