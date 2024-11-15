@@ -2,7 +2,7 @@
 setlocal EnableDelayedExpansion
 
 REM ----- Definir la lista de scripts -----
-set "SCRIPTS_LIST=script1.bat script2.bat script3.bat"  REM Puedes agregar los scripts aquí
+set "SCRIPTS_LIST=github.bat update.bat python.bat "  REM Puedes agregar los scripts aquí
 
 REM ----- Ejecutar cada script en la lista -----
 for %%F in (%SCRIPTS_LIST%) do (
