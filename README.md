@@ -3,6 +3,8 @@
 ```mermaid
 graph TD
     A[Instalador De Docs] --> B[Requeriments]
-    B -->|Yes| D["Instalar Gestion Docs"]
+    B -->|Yes| D["Quiere Instalar Gestion Docs"]
     B -->|No| E["Actualizar Aplicacion"]
-    B -->|Salir| F["Cancelar Instalaciones"]
+    E --> F[Conexion a Internet]
+    F --> G[Actualizar]
+    B -->|Salir| H["Cancelar Instalaciones"]
